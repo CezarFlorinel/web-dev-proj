@@ -14,8 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
         searchGuns(searchTerm);
     });
 
-    document.getElementById('addGunButton').addEventListener('click', function () {
-        window.location.href = '/createandeditweapon';
+    var buttons = document.querySelectorAll('.fancy-add-btn');
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            window.location.href = '/createandeditweapon';
+        });
     });
 });
 
@@ -27,9 +30,17 @@ function filterByType(type) {
         .then(guns => {
             const gunsContainer = document.querySelector('.guns_store');
             gunsContainer.innerHTML = ''; //this clears current guns
+            const gunsContainerUser = document.querySelector('.guns_store_user');
+            gunsContainerUser.innerHTML = '';
 
             guns.forEach(gun => {
-                gunsContainer.innerHTML += createGunCard(gun, userIsLoggedIn, intArrayOfFavouriteGuns);
+                if (parseInt(userLoggedInId) == gun.userId) {
+                    gunsContainerUser.innerHTML += createGunCard(gun, userIsLoggedIn, intArrayOfFavouriteGuns);
+                }
+                else {
+                    gunsContainer.innerHTML += createGunCard(gun, userIsLoggedIn, intArrayOfFavouriteGuns);
+                }
+
             });
         })
         .catch((error) => {
@@ -44,10 +55,17 @@ function searchGuns(searchTerm) {
         .then(guns => {
             const gunsContainer = document.querySelector('.guns_store');
             gunsContainer.innerHTML = '';
+            const gunsContainerUser = document.querySelector('.guns_store_user');
+            gunsContainerUser.innerHTML = '';
 
-            // Add filtered guns
             guns.forEach(gun => {
-                gunsContainer.innerHTML += createGunCard(gun, userIsLoggedIn, intArrayOfFavouriteGuns);
+                if (parseInt(userLoggedInId) == gun.userId) {
+                    gunsContainerUser.innerHTML += createGunCard(gun, userIsLoggedIn, intArrayOfFavouriteGuns);
+                }
+                else {
+                    gunsContainer.innerHTML += createGunCard(gun, userIsLoggedIn, intArrayOfFavouriteGuns);
+                }
+
             });
         })
         .catch((error) => {
@@ -98,9 +116,17 @@ function updateData() {
         .then(guns => {
             const gunsContainer = document.querySelector('.guns_store');
             gunsContainer.innerHTML = '';
+            const gunsContainerUser = document.querySelector('.guns_store_user');
+            gunsContainerUser.innerHTML = '';
 
             guns.forEach(gun => {
-                gunsContainer.innerHTML += createGunCard(gun, userIsLoggedIn, intArrayOfFavouriteGuns);
+                if (parseInt(userLoggedInId) == gun.userId) {
+                    gunsContainerUser.innerHTML += createGunCard(gun, userIsLoggedIn, intArrayOfFavouriteGuns);
+                }
+                else {
+                    gunsContainer.innerHTML += createGunCard(gun, userIsLoggedIn, intArrayOfFavouriteGuns);
+                }
+
             });
         })
         .catch((error) => {

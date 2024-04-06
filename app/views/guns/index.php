@@ -9,7 +9,6 @@ $gunsService = new GunsService();
 <head>
     <link rel="stylesheet" type="text/css" href="/CSS Files/guns.css">
 </head>
-<!-- SHOULD HAVE FUSED THIS WITH FAVOURITE AND MAKE ONLY ONE AHHHHHHHHH, i am dumb -->
 
 <body>
     <div class="image-container">
@@ -21,6 +20,7 @@ $gunsService = new GunsService();
 
         <div class="container mt-4">
             <h1 class="mb-4">Guns Collection</h1>
+            <div class="createButtonForAdminWithJs"><!-- button gets created here --> </div>
             <div class="row">
                 <div class="guns_store col-12">
                     <!-- !!!!! Guns will be displayed here with javascript !!!!!! -->
@@ -29,7 +29,7 @@ $gunsService = new GunsService();
         </div>
     </div>
 
-    <div id="createButtonForAdminWithJs"><!-- button gets created here --> </div>
+    <div class="createButtonForAdminWithJs"><!-- button gets created here --> </div>
 
     <!-- data for javascript (i should change if time) -->
     <div id="phpData" style="display: none;"

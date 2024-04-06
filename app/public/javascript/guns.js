@@ -11,16 +11,20 @@ document.addEventListener('DOMContentLoaded', function () {
     updateData();
 
     if (userIsAdmin) {
-        document.getElementById('createButtonForAdminWithJs').innerHTML = `<button id="addGunButton" class="fancy-add-btn">
-        <i class="fas fa-plus"></i> Add Gun
-         </button>`;
+        var elements = document.getElementsByClassName('createButtonForAdminWithJs');
+        for (var i = 0; i < elements.length; i++) {
+            var buttonId = "addGunButton-" + i;
+            elements[i].innerHTML = `<button id="${buttonId}" class="fancy-add-btn">
+            <i class="fas fa-plus"></i> Add Gun
+            </button>`;
+
+            // Add an event listener to the newly created button
+            document.getElementById(buttonId).addEventListener('click', function () {
+                window.location.href = '/createandeditweapon';
+            });
+        }
     }
 
-    if (userIsAdmin) {
-        document.getElementById('addGunButton').addEventListener('click', function () {
-            window.location.href = '/createandeditweapon';
-        });
-    }
 
     document.getElementById('gunSearchInput').addEventListener('input', function () {
         const searchTerm = this.value;
