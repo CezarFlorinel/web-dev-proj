@@ -1,0 +1,32 @@
+2024-04-03 15:05:28 - Unexpected token &#39;
+2024-04-03 15:08:28 - Unexpected end of JSON input
+2024-04-03 15:21:22 - admin.js - deleteModification - Unexpected end of JSON input
+2024-04-03 21:54:14 - guns.js - filterByType - guns.forEach is not a function
+2024-04-03 21:54:21 - guns.js - filterByType - guns.forEach is not a function
+2024-04-03 21:54:24 - guns.js - filterByType - guns.forEach is not a function
+2024-04-03 21:54:34 - guns.js - filterByType - guns.forEach is not a function
+2024-04-03 21:56:00 - guns.js - filterByType - guns.forEach is not a function
+2024-04-03 21:59:06 - guns.js - searchGuns - guns.forEach is not a function
+2024-04-03 21:59:59 - guns.js - searchGuns - result is not defined
+2024-04-03 22:03:57 - guns.js - searchGuns - result is not defined
+2024-04-03 22:04:22 - guns.js - searchGuns - data is not defined
+2024-04-03 22:04:42 - guns.js - searchGuns - guns.forEach is not a function
+2024-04-03 22:37:58 - admin.js - saveNewModification - Failed to upload image
+2024-04-03 22:38:23 - admin.js - saveNewModification - Failed to upload image
+2024-04-03 23:36:00 - createAndEditWeapons.js - createNewGun - Error uploading files.
+2024-04-03 23:36:28 - createAndEditWeapons.js - updateGun - Unexpected token &#039;E&#039;, &quot;Error: App&quot;... is not valid JSON
+2024-04-03 23:43:59 - createAndEditWeapons.js - updateGun - Error updating files.
+2024-04-04 13:43:29 - guns.js - filterByType - guns.forEach is not a function
+2024-04-04 13:44:18 - guns.js - filterByType - guns.forEach is not a function
+2024-04-04 13:55:30 - favourite.js - updateData - Dom is not defined
+2024-04-04 13:55:41 - favourite.js - updateData - Dom is not defined
+2024-04-04 14:17:36 - admin.js - deleteUser - response is not defined
+2024-04-04 14:20:20 - admin.js - editModification - Network response was not ok
+2024-04-04 14:21:09 - admin.js - editModification - Network response was not ok
+2024-04-04 14:21:34 - admin.js - saveNewModification - Failed to upload image
+2024-04-04 15:19:20 - admin.js - saveNewModification - Failed to upload image
+2024-04-04 15:19:29 - admin.js - saveNewModification - Failed to upload image
+2024-04-04 15:37:14 - admin.js - saveNewModification - Failed to upload image
+2024-04-04 15:37:43 - admin.js - saveNewModification - Failed to upload image
+2024-04-04 15:38:11 - admin.js - saveNewModification - Failed to upload image
+2024-04-04 15:38:17 - admin.js - saveNewModification - Failed to upload image

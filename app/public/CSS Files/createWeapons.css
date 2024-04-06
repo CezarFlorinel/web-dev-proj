@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Keania One', sans-serif;
+    background-image: url('../images/elements/black gun.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    color: white;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.form-control {
+    font-family: 'Khand', sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    max-width: 600px;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(25deg, #ff0000, #fbfbfb);
+    min-width: 200px;
+    min-height: 50px;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-image: linear-gradient(25deg, #fbfbfb, #ff0000);
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(25deg, #bfef00, #12dbaf);
+    min-width: 200px;
+    min-height: 50px;
+    font-size: 25px;
+}
+
+@media (max-width: 400px) {
+    .form-control {
+        font-size: 15px;
+        margin-bottom: 3px;
+        max-width: 300px;
+        margin-left: 13px;
+    }
+
+    label {
+        margin-top: 8px;
+        font-size: 18px;
+        margin-left: 13px;
+    }
+}

@@ -1,0 +1,161 @@
+.homeBody {
+    background-color: black;
+    color: white;
+}
+
+.homeImage {
+    width: 98.7vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    image-rendering: pixelated;
+}
+
+.gun-img {
+    width: 300px;
+    height: 300px;
+    image-rendering: pixelated;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.homeBody h1 {
+    font-family: 'Keania One', sans-serif;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.homeBody h2 {
+    font-family: 'Keania One', sans-serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.p-first-block,
+.p-second-block {
+    font-family: 'Khand', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    /* Adjusted for spacing */
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.p-first-block>.gun-img,
+.p-second-block>.gun-img {
+    flex-shrink: 0;
+    /* Prevents the image from shrinking */
+}
+
+.p-second-block {
+    flex-direction: row-reverse;
+    /* Reverses the order for the second block */
+}
+
+/* Ensure images do not get flattened by adding a wrapper around the text */
+.p-first-block>div,
+.p-second-block>div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.QandA-info-container {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+    color: white;
+    font-family: "Imprima", sans-serif;
+    border: #ffffff 3px solid;
+    background-color: black;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.QandA-info-item {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 3px solid white;
+    /* adds a white line below each item */
+}
+
+.QandA-info-sign {
+    margin-right: 30px;
+    width: 5%;
+    height: 5%;
+}
+
+.QandA-info-item:last-child {
+    border-bottom: none;
+}
+
+.QandA-info-answer {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+
+    .p-first-block,
+    .p-second-block {
+        font-size: 18px;
+        /* Slightly smaller */
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* For smaller devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    .p-first-block,
+    .p-second-block {
+        font-size: 13px;
+        /* Even smaller */
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* For extra small devices (phones, less than 576px) */
+@media (max-width: 400px) {
+
+    .p-first-block,
+    .p-second-block {
+        font-size: 10px;
+        /* Smallest for very small devices */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+
+    }
+}

@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Keania One';
+    src: url("../fonts/KeaniaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Khand';
+    src: url("../fonts/Khand-Regular.ttf");
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    font-family: 'Keania One';
+}
+
+.logo {
+    width: 81px;
+    height: 74px;
+    image-rendering: pixelated;
+    border-radius: 50%;
+    margin-right: 18px;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.AccountIcon {
+    width: 50px;
+    height: 50px;
+    image-rendering: pixelated;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.logoItems {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.logoTitle {
+    color: black;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .header {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+        font-family: 'Keania One';
+        padding: 10px;
+    }
+
+    .logo {
+        width: 81px;
+        height: 74px;
+        image-rendering: pixelated;
+        border-radius: 50%;
+        margin-right: 18px;
+        padding: 2px;
+        overflow: hidden;
+    }
+
+    .AccountIcon {
+        width: 50px;
+        height: 50px;
+        image-rendering: pixelated;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .nav-link {
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        margin: 5px 10px;
+    }
+
+    .nav-link:hover {
+        color: red;
+    }
+
+    .logoTitle {
+        color: black;
+        font-size: 32px;
+        font-weight: 400;
+        margin: 20px 0;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .logoTitle {
+        font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .logo {
+        width: 60px;
+        /* Smaller logo */
+        height: 55px;
+    }
+
+    .navigation {
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .AccountIcon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-link {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+}
+
+
+/* hahahah - custom cursor go BRRRRRRRR */
+.clickable:hover {
+    cursor: pointer;
+    cursor: url('../images/elements/gun_pointer.png'), pointer;
+}
+
+html,
+body {
+    cursor: url('../images/elements/gun_cursor.png'), default;
+}
+
+.btn:hover {
+    cursor: url('../images/elements/gun_pointer.png'), pointer;
+}
+
+a:hover {
+    cursor: url('../images/elements/gun_pointer.png'), pointer;
+}
+
+.fancy-add-btn:hover {
+    cursor: url('../images/elements/gun_pointer.png'), pointer;
+}

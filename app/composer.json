@@ -1,0 +1,23 @@
+{
+    "name": "cezar/word-of-guns",
+    "description": "World of Guns Project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Cezar Ciobanu"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": ".",
+            "App\\Controllers\\": "./controllers",
+            "App\\Api\\Controllers\\": "./api/controllers",
+            "App\\Models\\": "./models",
+            "App\\Services\\": "./services",
+            "App\\Repositories\\": "./repositories",
+            "App\\Views\\": "./views",
+            "App\\Utilities\\": "./utilities"
+        }
+    }
+}

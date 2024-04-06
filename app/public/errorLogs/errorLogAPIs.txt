@@ -1,0 +1,7 @@
+2024-04-04 14:20:20 - SQLSTATE[01000]: Warning: 1265 Data truncated for column 'modificationEstimatedPrice' at row 1
+2024-04-04 14:21:09 - SQLSTATE[01000]: Warning: 1265 Data truncated for column 'modificationEstimatedPrice' at row 1
+22000000
+220
+220
+220.20
+220.20
