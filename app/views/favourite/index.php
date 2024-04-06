@@ -7,12 +7,9 @@ $gunsService = new GunsService();
 
 ?>
 
-
-
 <head>
     <link rel="stylesheet" type="text/css" href="/CSS Files/guns.css">
-</head>
-<!-- SHOULD HAVE FUSED THIS WITH GUNS AND MAKE ONLY ONE AHHHHHHHHH, i am dumb -->
+</head> <!-- could have made some componets or merge it with the gun page, check it out for web dev 2  -->
 
 <body>
     <div class="image-container">
@@ -24,16 +21,23 @@ $gunsService = new GunsService();
 
         <div class="container mt-4">
             <h1 class="mb-4">Guns Collection</h1>
+
+            <?php include __DIR__ . '/../../public/components/gunsDisplayPage/addGunButton.php'; ?>
+
             <div class="row">
+                <h2 class="mb-4">Guns Made By You</h2>
+                <div class="guns_store_user col-12">
+                    <!-- !!!!! Guns will be displayed here with javascript !!!!!! -->
+                </div>
+                <h2 class="mb-4">Favourite Guns</h2>
                 <div class="guns_store col-12">
                     <!-- !!!!! Guns will be displayed here with javascript !!!!!! -->
                 </div>
             </div>
+
         </div>
     </div>
-    <button id="addGunButton" class="fancy-add-btn">
-        <i class="fas fa-plus"></i> Add Gun
-    </button>
+    <?php include __DIR__ . '/../../public/components/gunsDisplayPage/addGunButton.php'; ?>
 
     <div id="phpData" style="display: none;"
         data-user-is-logged-in="<?php echo isset($_SESSION['loggedin']) && $_SESSION['loggedin']; ?>"
