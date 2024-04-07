@@ -45,7 +45,6 @@
     font-family: 'Khand', sans-serif;
     display: flex;
     justify-content: space-between;
-    /* Adjusted for spacing */
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -62,7 +61,6 @@
 
 .p-second-block {
     flex-direction: row-reverse;
-    /* Reverses the order for the second block */
 }
 
 /* Ensure images do not get flattened by adding a wrapper around the text */
@@ -121,7 +119,6 @@
     .p-first-block,
     .p-second-block {
         font-size: 18px;
-        /* Slightly smaller */
         margin-top: 40px;
         margin-bottom: 40px;
         margin-left: 15px;
@@ -129,13 +126,12 @@
     }
 }
 
-/* For smaller devices (landscape phones, 576px and up) */
+/* For smaller devices*/
 @media (max-width: 576px) {
 
     .p-first-block,
     .p-second-block {
         font-size: 13px;
-        /* Even smaller */
         margin-top: 30px;
         margin-bottom: 30px;
         margin-left: 10px;
@@ -143,13 +139,12 @@
     }
 }
 
-/* For extra small devices (phones, less than 576px) */
+/* For extra small devices */
 @media (max-width: 400px) {
 
     .p-first-block,
     .p-second-block {
         font-size: 10px;
-        /* Smallest for very small devices */
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: 5px;
